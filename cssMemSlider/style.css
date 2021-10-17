@@ -80,6 +80,7 @@ input[name="r"] {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
 }
 
 .text_under_meme {
@@ -151,4 +152,36 @@ input[name="r"] {
 
 #r4:checked ~ .container .l4 {
   background-color: white;
+}
+
+
+
+
+
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 310px;
+  }
+
+  .slider {
+    width: 320px;
+    height: 568px;
+  }
+
+  .slides_wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .slide img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .navigation_and_text {
+    height: 70px;
+    flex-direction: column;
+    width: 300px;
+  }
 }
