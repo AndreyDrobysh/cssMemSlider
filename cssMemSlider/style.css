@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  width: 1440px;
+  height: 700px;
+  background-color: grey;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.navigation {
+  position: relative;
+  display: flex;
+}
+
+.bar {
+  height: 12px;
+  width: 12px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: blue;
+  border: 3px solid blue;
+  border-radius: 10px;
+  transition: all .4s ease;
+}
+
+.bar:hover {
+  opacity: .8;
+  transform: scale(1.2);
+}
+
+.bar::after {
+  background-color: white;
+}
+
+input[name="r"] {
+  display: none;
+}
+
+.slides_wrapper {
+  width: 1100px;
+  height: 600px;
+  overflow: hidden;
+}
+.slides {
+  width: 400%;
+  height: 600px;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  transition: all .6s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.navigation_and_text {
+  width: 1100px;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.text_under_meme {
+  width: 300px;
+  overflow: hidden;
+  padding: 3px 0 0 0;
+}
+
+.wrapper_text {
+  display: flex;
+  width: 400%;
+  margin-left: 0;
+}
+
+.text {
+  font-size: 20px;
+  width: 100%;
+}
+
+
+#r1:checked ~ .container .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .container .s1 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .container .s1 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .container .s1 {
+  margin-left: -75%;
+}
+
+
+
+#r1:checked ~ .container .t1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .container .t1 {
+  margin-left: -100%;
+}
+
+#r3:checked ~ .container .t1 {
+  margin-left: -200%;
+}
+
+#r4:checked ~ .container .t1 {
+  margin-left: -300%;
+} 
+
+.t1 {
+  transition: all .6s ease;
+}
+
+#r1:checked ~ .container .l1 {
+  background-color: white;
+}
+#r2:checked ~ .container .l2 {
+  background-color: white;
+}
+
+#r3:checked ~ .container .l3 {
+  background-color: white;
+}
+
+#r4:checked ~ .container .l4 {
+  background-color: white;
+}
